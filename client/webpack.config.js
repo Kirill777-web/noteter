@@ -18,7 +18,7 @@ module.exports = () => {
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin({
         template: './index.html', // path to your application's HTML entry point
-        title: 'J.A.T.E', // output HTML filename
+        title: 'noteter', // output HTML filename
       }),
       // Workbox plugin to generate a service worker
       new InjectManifest({
@@ -30,7 +30,7 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'J.A.T.E',
+        name: 'noteter',
         short_name: 'Text Editor',
         description: 'A simple text editor',
         background_color: '#ffffff',
